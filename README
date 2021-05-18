@@ -1,0 +1,39 @@
+NAME
+    cpan-get - Script to get from CPAN archive.
+
+SYNOPSIS
+     cpan-get [-h] [--version] module_name
+
+ARGUMENTS
+    *       "-h"
+
+             Print help.
+
+    *       "--version"
+
+             Print version of script.
+
+    *       "module_name"
+
+             Perl module name.
+             e.g. Module::Install
+
+EXAMPLE
+     cpan-get Module::Install
+
+REPOSITORY
+    <https://github.com/michal-josef-spacek/App-CPAN-Get>
+
+AUTHOR
+    Michal Josef Špaček <mailto:skim@cpan.org>
+
+    <http://skim.cz>
+
+LICENSE AND COPYRIGHT
+    © 2021 Michal Josef Špaček
+
+    BSD 2-Clause License
+
+VERSION
+    0.01
+
