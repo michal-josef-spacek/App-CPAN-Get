@@ -66,8 +66,7 @@ sub run {
 		'package' => $self->{'_module_name'},
 	});
 	if (! defined $res) {
-		print STDERR "Module '".$self->{'_module_name'}."' doesn't exist.";
-		return 1;
+		err "Module '".$self->{'_module_name'}."' doesn't exist.";
 	}
 
 	# Download dist.
@@ -127,6 +126,19 @@ Constructor.
 Run.
 
 Returns 1 for error, 0 for success.
+
+=head1 ERRORS
+
+ new():
+         From Class::Utils::set_params():
+                 Unknown parameter '%s'.
+         Parameter 'lwp_user_agent' must be a LWP::UserAgent instance.
+
+ run():
+         Cannot download '%s'.
+         Module '%s' doesn't exist.
+         Value 'download_uri' doesn't exist.
+         Value 'uri' doesn't exist.
 
 =head1 EXAMPLE
 
