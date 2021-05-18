@@ -1,8 +1,16 @@
 NAME
-    cpan-get - Script to get from CPAN archive.
+    cpan-get - Script to fetch module from CPAN archive.
 
 SYNOPSIS
      cpan-get [-h] [--version] module_name
+
+DESCRIPTION
+    Vision of this module is:
+
+     * intuitive name for script which fetching module from CPAN
+     * intuitive caching mechanism (switch for source)
+     * simple dependencies to modules, which doing one thing (not CPAN module)
+     * testable and tested distribution
 
 ARGUMENTS
     *       "-h"
@@ -16,10 +24,26 @@ ARGUMENTS
     *       "module_name"
 
              Perl module name.
-             e.g. Module::Install
+             e.g. App::Pod::Example
 
 EXAMPLE
-     cpan-get Module::Install
+     cpan-get App::Pod::Example
+
+SEE ALSO
+    cpan
+        easily interact with CPAN from the command line
+
+        "cpan -g Some::Module"
+
+    cpanspec
+        Generate a spec file for a CPAN module
+
+        "cpanspec -D App::Pod::Example"
+
+    sourcepan
+        fetch source archives from CPAN
+
+        "sourcepan --git App::Pod::Example"
 
 REPOSITORY
     <https://github.com/michal-josef-spacek/App-CPAN-Get>
