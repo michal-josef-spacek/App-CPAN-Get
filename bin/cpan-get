@@ -5,7 +5,7 @@ use warnings;
 
 use App::CPAN::Get;
 
-our $VERSION = 0.02;
+our $VERSION = 0.03;
 
 # Run.
 exit App::CPAN::Get->new->run;
@@ -108,6 +108,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.02
+0.03
 
 =cut
