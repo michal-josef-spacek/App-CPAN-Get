@@ -9,7 +9,7 @@ DESCRIPTION
 
      * intuitive name for script which fetching module from CPAN
      * intuitive caching mechanism (switch for source)
-     * simple dependencies to modules, which doing one thing (not CPAN module)
+     * simple dependencies to modules, which doing one thing (not CPAN module) SIC!
      * testable and tested distribution
 
 ARGUMENTS
