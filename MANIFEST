@@ -1,6 +1,7 @@
 bin/cpan-get
 Changes
 CONCEPT
+examples/ex1.pl
 Get.pm
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
