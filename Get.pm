@@ -87,7 +87,7 @@ sub run {
 	my $dist_file = ($u->path_segments)[-1];
 	barf($dist_file, $dist_res->decoded_content);
 
-	print "'$res->{'download_uri'}' was downloaded.\n";
+	print "Package on '$res->{'download_uri'}' was downloaded.\n";
 	
 	return 0;
 }
