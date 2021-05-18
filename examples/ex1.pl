@@ -14,3 +14,4 @@ use App::CPAN::Get;
 exit App::CPAN::Get->new->run;
 
 # Output like:
+# Package on 'http://cpan.metacpan.org/authors/id/S/SK/SKIM/App-Pod-Example-0.19.tar.gz' was downloaded.

@@ -144,6 +144,7 @@ Returns 1 for error, 0 for success.
  exit App::CPAN::Get->new->run;
 
  # Output like:
+ # Package on 'http://cpan.metacpan.org/authors/id/S/SK/SKIM/App-Pod-Example-0.19.tar.gz' was downloaded.
 
 =head1 DEPENDENCIES
 
