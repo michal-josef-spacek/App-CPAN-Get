@@ -3,7 +3,8 @@ TODO
 1. Save to cache.
 2. Look to cache, if downloaded.
 3. Download version.
-4.
+4. Test downloading (Test::LWP::UserAgent).
+5.
 
 Applied
 =======
