@@ -16,6 +16,7 @@ author_requires 'Test::Pod::Coverage' => 0;
 install_script 'bin/cpan-get';
 license 'bsd';
 name 'App-CPAN-Get';
+perl_version 5.006;
 readme_from 'bin/cpan-get';
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0;
@@ -25,7 +26,6 @@ requires 'IO::Barf' => 0;
 requires 'LWP::UserAgent' => 0;
 requires 'Menlo::Index::MetaCPAN' => 0;
 requires 'URI::cpan' => 0;
-requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/App-CPAN-Get/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/App-CPAN-Get';
 resources 'repository' => 'git://github.com/michal-josef-spacek/App-CPAN-Get';
