@@ -1,4 +1,4 @@
-0.04
+0.04 2022-01-05T12:09:13+01:00
  - Add another way how to download Perl module (cpanp).
  - Add test for help.
  - Improve help in tool.
