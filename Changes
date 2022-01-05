@@ -1,5 +1,6 @@
 0.04
  - Add another way how to download Perl module (cpanp).
+ - Improve help in tool.
  - Update COPYRIGHT years.
 
 0.03 2021-11-01T13:00:45+01:00
