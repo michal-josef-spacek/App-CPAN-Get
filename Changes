@@ -1,5 +1,6 @@
 0.05
  - Fix test requirements.
+ - Fix 04-run.t test to run from different places.
 
 0.04 2022-01-05T12:09:13+01:00
  - Add another way how to download Perl module (cpanp).
