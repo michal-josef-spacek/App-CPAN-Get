@@ -4,6 +4,7 @@ TODO
 2. Look to cache, if downloaded. (enabling of caching)
 4. Test downloading (Test::LWP::UserAgent).
 5. Usage of LWP::UserAgent and Menlo in another way isn't good.
+See cpanget tool in cpanspec project.
 7. If file is downloaded in local directory, not download.
 8.
 
