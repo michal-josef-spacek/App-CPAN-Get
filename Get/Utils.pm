@@ -60,6 +60,8 @@ Returns array with module name and module version range strings.
 
 =head1 EXAMPLE
 
+=for comment filename=process_module_name_and_version.pl
+
  use strict;
  use warnings;
 

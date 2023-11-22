@@ -150,6 +150,8 @@ Returns 1 for error, 0 for success.
 
 =head1 EXAMPLE
 
+=for comment filename=download_app_pod_example.pl
+
  use strict;
  use warnings;
 
