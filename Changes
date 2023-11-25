@@ -1,3 +1,5 @@
+0.10
+
 0.09 2023-11-25T16:02:35+01:00
  - Rename example files to better names.
  - Update Module::Install to 1.21 version.
