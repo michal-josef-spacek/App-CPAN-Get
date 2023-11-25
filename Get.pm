@@ -127,6 +127,8 @@ App::CPAN::Get - Base class for cpan-get script.
 
 Constructor.
 
+Returns instance of object.
+
 =head2 C<run>
 
  my $exit_code = $app->run;
