@@ -3,14 +3,12 @@ package App::CPAN::Get;
 use strict;
 use warnings;
 
+use App::CPAN::Get::MetaCPAN;
 use App::CPAN::Get::Utils qw(process_module_name_and_version);
 use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Getopt::Std;
-use IO::Barf qw(barf);
 use LWP::UserAgent;
-use Menlo::Index::MetaCPAN;
-use URI::cpan;
 
 our $VERSION = 0.10;
 
@@ -36,6 +34,10 @@ sub new {
 		$self->{'lwp_user_agent'} = LWP::UserAgent->new;
 		$self->{'lwp_user_agent'}->agent(__PACKAGE__.'/'.$VERSION);
 	}
+
+	$self->{'_cpan'} = App::CPAN::Get::MetaCPAN->new(
+		'lwp_user_agent' => $self->{'lwp_user_agent'},
+	);
 
 	# Object.
 	return $self;
@@ -66,36 +68,18 @@ sub run {
 	($self->{'_module_name'}, $self->{'_module_version_range'})
 		= process_module_name_and_version($self->{'_module_name_and_version'});
 
-	# Get meta information for module name.
-	# XXX Why not small dist?.
-	my $res = Menlo::Index::MetaCPAN->new->search_packages({
+	# Search.
+	my $search_hr = $self->{'_cpan'}->search({
 		'package' => $self->{'_module_name'},
-		exists $self->{'_module_version_range'}
-			? ('version_range' => $self->{'_module_version_range'})
-			: (),
+		'version_range' => $self->{'_module_version_range'},
 	});
-	if (! defined $res) {
-		err "Module '".$self->{'_module_name'}."' doesn't exist.";
-	}
 
-	# Download dist.
-	if (! $res->{'download_uri'}) {
-		err "Value 'download_uri' doesn't exist.";
-	}
-	my $dist_res = $self->{'lwp_user_agent'}->get($res->{'download_uri'});
-	if (! $dist_res->is_success) {
-		err "Cannot download '$res->{'download_uri'}'.";
-	}
+	# Save.
+	my $download_url = URI->new($search_hr->{'download_url'});
+	my $file_to_save = ($download_url->path_segments)[-1];
+	$self->{'_cpan'}->save($search_hr->{'download_url'}, $file_to_save);
 
-	# Save to file.
-	if (! $res->{'uri'}) {
-		err "Value 'uri' doesn't exist.";
-	}
-	my $u = URI->new($res->{'uri'});
-	my $dist_file = ($u->path_segments)[-1];
-	barf($dist_file, $dist_res->decoded_content);
-
-	print "Package on '$res->{'download_uri'}' was downloaded.\n";
+	print "Package on '$search_hr->{'download_url'}' was downloaded.\n";
 	
 	return 0;
 }
@@ -145,10 +129,13 @@ Returns 1 for error, 0 for success.
          Parameter 'lwp_user_agent' must be a LWP::UserAgent instance.
 
  run():
-         Cannot download '%s'.
-         Module '%s' doesn't exist.
-         Value 'download_uri' doesn't exist.
-         Value 'uri' doesn't exist.
+         From App::CPAN::Get::MetaCPAN::search():
+                Bad search options.
+                Cannot connect to CPAN server.
+                        HTTP code: %s
+                        HTTP message: %s
+                Module '%s' doesn't exist.
+                Package doesn't present.
 
 =head1 EXAMPLE
 
@@ -172,13 +159,12 @@ Returns 1 for error, 0 for success.
 
 =head1 DEPENDENCIES
 
+L<App::CPAN::Get::MetaCPAN>,
+L<App::CPAN::Get::Utils>,
 L<Class::Utils>,
 L<Error::Pure>,
 L<Getopt::Std>,
-L<IO::Barf>,
-L<LWP::UserAgent>
-L<Menlo::Index::MetaCPAN>
-L<URI::cpan>.
+L<LWP::UserAgent>.
 
 =head1 REPOSITORY
 
