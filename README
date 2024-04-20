@@ -1,5 +1,5 @@
 NAME
-    cpan-get - Script to fetch module from CPAN archive.
+    cpan-get - Tool to fetch module from CPAN archive.
 
 SYNOPSIS
      cpan-get [-h] [--version] module_name[module_version]

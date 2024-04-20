@@ -1,5 +1,5 @@
 ---
-abstract: 'Base class and script for getting of dist from CPAN.'
+abstract: 'Tool to fetch module from CPAN archive.'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
