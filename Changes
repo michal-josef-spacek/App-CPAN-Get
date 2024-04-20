@@ -1,4 +1,5 @@
 0.10
+ - Add tests for App::CPAN::Get::MetaCPAN.
  - Improve check for LWP::UserAgent.
  - Rewrite from Menlo::Index::MetaCPAN to own implementation.
  - Update copyright years.

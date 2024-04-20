@@ -9,6 +9,7 @@ build_requires:
   File::Object: 0
   File::Spec::Functions: 0
   Test::LWP::UserAgent: 0
+  Test::MockObject: 0
   Test::More: 0
   Test::NoWarnings: 0
   Test::Output: 0
