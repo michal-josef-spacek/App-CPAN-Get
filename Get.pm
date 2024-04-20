@@ -11,7 +11,7 @@ use Getopt::Std;
 use LWP::UserAgent;
 use Scalar::Util qw(blessed);
 
-our $VERSION = 0.10;
+our $VERSION = 0.11;
 
 # Constructor.
 sub new {
@@ -188,6 +188,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.10
+0.11
 
 =cut
