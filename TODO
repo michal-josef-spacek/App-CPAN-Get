@@ -4,8 +4,6 @@ TODO
 2. Look to cache, if downloaded. (enabling of caching)
 4. Test downloading (Test::LWP::UserAgent).
 7. If file is downloaded in local directory, not download.
-8. Could i detect that network is not working?
-Actual result is Module '__MODULE__' doesn't exist.
 9. Review 'version' and 'version_range'
 10. Tests for MetaCPAN::search().
 11. Tests for MetaCPAN::save().
@@ -23,3 +21,8 @@ OK [20220131] skim
 5. Usage of LWP::UserAgent and Menlo in another way isn't good.
 See cpanget tool in cpanspec project.
 OK [20240416] skim
+
+8. Could i detect that network is not working?
+Actual result is Module '__MODULE__' doesn't exist.
+After rewrite to own implementation, there is error for it.
+OK [20240420] skim
