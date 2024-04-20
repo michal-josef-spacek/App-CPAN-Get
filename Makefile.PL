@@ -28,6 +28,7 @@ requires 'Getopt::Std' => 0;
 requires 'IO::Barf' => 0;
 requires 'LWP::UserAgent' => 0;
 requires 'Readonly' => 0;
+requires 'Scalar::Util' => 0;
 requires 'URI' => 0;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/App-CPAN-Get/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/App-CPAN-Get';

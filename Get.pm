@@ -9,6 +9,7 @@ use Class::Utils qw(set_params);
 use Error::Pure qw(err);
 use Getopt::Std;
 use LWP::UserAgent;
+use Scalar::Util qw(blessed);
 
 our $VERSION = 0.10;
 
@@ -26,7 +27,9 @@ sub new {
 	set_params($self, @params);
 
 	if (defined $self->{'lwp_user_agent'}) {
-		if (! $self->{'lwp_user_agent'}->isa('LWP::UserAgent')) {
+		if (! blessed($self->{'lwp_user_agent'})
+			|| ! $self->{'lwp_user_agent'}->isa('LWP::UserAgent')) {
+
 			err "Parameter 'lwp_user_agent' must be a ".
 				'LWP::UserAgent instance.';
 		}
@@ -164,7 +167,8 @@ L<App::CPAN::Get::Utils>,
 L<Class::Utils>,
 L<Error::Pure>,
 L<Getopt::Std>,
-L<LWP::UserAgent>.
+L<LWP::UserAgent>,
+L<Scalar::Util>.
 
 =head1 REPOSITORY
 

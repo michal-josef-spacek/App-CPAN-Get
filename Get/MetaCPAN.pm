@@ -10,6 +10,7 @@ use Error::Pure qw(err);
 use IO::Barf qw(barf);
 use LWP::UserAgent;
 use Readonly;
+use Scalar::Util qw(blessed);
 use URI;
 
 Readonly::Scalar our $FASTAPI => qw(https://fastapi.metacpan.org/v1/download_url/);
@@ -29,7 +30,9 @@ sub new {
 	set_params($self, @params);
 
 	if (defined $self->{'lwp_user_agent'}) {
-		if (! $self->{'lwp_user_agent'}->isa('LWP::UserAgent')) {
+		if (! blessed($self->{'lwp_user_agent'})
+			|| ! $self->{'lwp_user_agent'}->isa('LWP::UserAgent')) {
+
 			err "Parameter 'lwp_user_agent' must be a ".
 				'LWP::UserAgent instance.';
 		}

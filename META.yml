@@ -38,6 +38,7 @@ requires:
   IO::Barf: 0
   LWP::UserAgent: 0
   Readonly: 0
+  Scalar::Util: 0
   URI: 0
   perl: 5.6.0
 resources:
