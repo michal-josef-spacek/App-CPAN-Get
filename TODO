@@ -7,7 +7,9 @@ TODO
 8. Could i detect that network is not working?
 Actual result is Module '__MODULE__' doesn't exist.
 9. Review 'version' and 'version_range'
-10.
+10. Tests for MetaCPAN::search().
+11. Tests for MetaCPAN::save().
+12.
 
 Applied
 =======
