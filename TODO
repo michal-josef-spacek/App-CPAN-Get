@@ -9,7 +9,8 @@ Actual result is Module '__MODULE__' doesn't exist.
 9. Review 'version' and 'version_range'
 10. Tests for MetaCPAN::search().
 11. Tests for MetaCPAN::save().
-12.
+12. Doc for App::CPAN::Get::MetaCPAN.
+13.
 
 Applied
 =======
