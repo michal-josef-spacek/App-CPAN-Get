@@ -1,5 +1,6 @@
 0.10
  - Rewrite from Menlo::Index::MetaCPAN to own implementation.
+ - Update copyright years.
 
 0.09 2023-11-25T16:02:35+01:00
  - Rename example files to better names.
