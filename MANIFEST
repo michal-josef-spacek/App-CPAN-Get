@@ -4,6 +4,7 @@ CONCEPT
 examples/download_app_pod_example.pl
 examples/process_module_name_and_version.pl
 Get.pm
+Get/MetaCPAN.pm
 Get/Utils.pm
 inc/Module/Install.pm
 inc/Module/Install/AuthorRequires.pm
