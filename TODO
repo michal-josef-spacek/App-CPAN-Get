@@ -8,7 +8,10 @@ TODO
 10. Tests for MetaCPAN::search().
 11. Tests for MetaCPAN::save().
 12. Doc for App::CPAN::Get::MetaCPAN.
-13.
+13. Error messages in MetaCPAN
+    a) Params to search()
+    b) Same style as in search() to save().
+14.
 
 Applied
 =======
