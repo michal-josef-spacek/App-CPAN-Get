@@ -1,6 +1,7 @@
 0.11
  - Add doc for App::CPAN::Get::MetaCPAN.
  - Add tests for Get::run().
+ - Add tests for MetaCPAN::search().
  - Finish tests of Get module.
  - Rewrite arguments process to more intuitive way.
  - Rewrite run() tests to use of help() helper.
