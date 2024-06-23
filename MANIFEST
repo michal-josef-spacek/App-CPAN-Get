@@ -3,6 +3,8 @@ Changes
 CONCEPT
 examples/download_app_pod_example.pl
 examples/process_module_name_and_version.pl
+examples/search_module.pl
+examples/search_module_versions.pl
 Get.pm
 Get/MetaCPAN.pm
 Get/Utils.pm
