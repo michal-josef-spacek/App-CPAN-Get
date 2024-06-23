@@ -2,7 +2,6 @@ TODO
 ====
 1. Save to cache. (enabling of caching)
 2. Look to cache, if downloaded. (enabling of caching)
-4. Test downloading (Test::LWP::UserAgent).
 7. If file is downloaded in local directory, not download.
 9. Review 'version' and 'version_range'
 10. Tests for MetaCPAN::search().
@@ -29,3 +28,6 @@ OK [20240416] skim
 Actual result is Module '__MODULE__' doesn't exist.
 After rewrite to own implementation, there is error for it.
 OK [20240420] skim
+
+4. Test downloading (Test::LWP::UserAgent).
+OK [20240623] skim
