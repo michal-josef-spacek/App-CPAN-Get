@@ -15,7 +15,7 @@ use URI;
 
 Readonly::Scalar our $FASTAPI => qw(https://fastapi.metacpan.org/v1/download_url/);
 
-our $VERSION = 0.12;
+our $VERSION = 0.13;
 
 sub new {
 	my ($class, @params) = @_;
@@ -318,6 +318,6 @@ BSD 2-Clause License
 
 =head1 VERSION
 
-0.12
+0.13
 
 =cut
