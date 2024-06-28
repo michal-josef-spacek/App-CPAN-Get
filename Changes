@@ -1,5 +1,6 @@
 0.12
  - Fix minimal version of Test::Warn.
+ - Functional tests of MetaCPAN->search() to top of test file.
 
 0.11 2024-06-23T16:49:45+02:00
  - Add doc for App::CPAN::Get::MetaCPAN.
