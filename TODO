@@ -10,7 +10,9 @@ TODO
 13. Error messages in MetaCPAN
     a) Params to search()
     b) Same style as in search() to save().
-14.
+14. Rewrite construction of functional test of MetaCPAN->search(). We need one
+    place with result. $content needs to be created from structure.
+15.
 
 Applied
 =======
