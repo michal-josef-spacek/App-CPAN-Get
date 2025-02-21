@@ -73,7 +73,19 @@ sub search {
 }
 
 sub save {
-	my ($self, $uri, $file) = @_;
+	my ($self, $uri, $file, $opts_hr) = @_;
+
+	my $force = 0;
+	if (defined $opts_hr
+		&& exists $opts_hr->{'f'}
+		&& $opts_hr->{'f'}) {
+
+		$force = 1;
+	}
+
+	if (-r $file && ! $force) {
+		err "File '$file' exists.";
+	}
 
 	my $content = $self->_fetch($uri);
 

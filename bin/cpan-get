@@ -28,7 +28,7 @@ cpan-get - Tool to fetch module from CPAN archive.
 
 =head1 SYNOPSIS
 
- cpan-get [-h] [--version] module_name[module_version]
+ cpan-get [-f] [-h] [--version] module_name[module_version]
 
 =head1 DESCRIPTION
 
@@ -42,6 +42,10 @@ Vision of this module is:
 =head1 ARGUMENTS
 
 =over 8
+
+=item * C<-f>
+
+ Force download and rewrite of existing file.
 
 =item * C<-h>
 

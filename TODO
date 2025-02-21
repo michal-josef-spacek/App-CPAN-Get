@@ -2,7 +2,6 @@ TODO
 ====
 1. Save to cache. (enabling of caching)
 2. Look to cache, if downloaded. (enabling of caching)
-7. If file is downloaded in local directory, not download.
 9. Review 'version' and 'version_range'
 10. Tests for MetaCPAN::search().
 11. Tests for MetaCPAN::save().
@@ -33,3 +32,6 @@ OK [20240420] skim
 
 4. Test downloading (Test::LWP::UserAgent).
 OK [20240623] skim
+
+7. If file is downloaded in local directory, not download.
+OK [20250221] skim
