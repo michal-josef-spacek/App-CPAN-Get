@@ -11,7 +11,8 @@ TODO
     b) Same style as in search() to save().
 14. Rewrite construction of functional test of MetaCPAN->search(). We need one
     place with result. $content needs to be created from structure.
-15.
+15. Add option to output directory.
+16.
 
 Applied
 =======
