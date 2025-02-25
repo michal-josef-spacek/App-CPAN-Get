@@ -45,26 +45,27 @@ Vision of this module is:
 
 =item * C<-f>
 
- Force download and rewrite of existing file.
+Force download and rewrite of existing file.
 
 =item * C<-h>
 
- Print help.
+Print help.
 
 =item * C<-o out_dir>
 
- Output directory.
+Output directory.
 
- Default value is actual directory.
+Default value is actual directory.
 
 =item * C<--version>
 
- Print version of script.
+Print version of script.
 
 =item * C<module_name>
 
- Perl module name.
- e.g. App::Pod::Example
+Perl module name.
+
+e.g. App::Pod::Example
 
 =item * C<module_version>
 

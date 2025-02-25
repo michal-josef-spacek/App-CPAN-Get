@@ -1,5 +1,6 @@
 0.14
  - Add -o option to define output directory.
+ - Improve doc of cpan-get tool.
  - Improve examples of similar tools in doc.
 
 0.13 2025-02-21T11:58:01+01:00

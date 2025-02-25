@@ -15,26 +15,27 @@ DESCRIPTION
 ARGUMENTS
     *       "-f"
 
-             Force download and rewrite of existing file.
+            Force download and rewrite of existing file.
 
     *       "-h"
 
-             Print help.
+            Print help.
 
     *       "-o out_dir"
 
-             Output directory.
+            Output directory.
 
-             Default value is actual directory.
+            Default value is actual directory.
 
     *       "--version"
 
-             Print version of script.
+            Print version of script.
 
     *       "module_name"
 
-             Perl module name.
-             e.g. App::Pod::Example
+            Perl module name.
+
+            e.g. App::Pod::Example
 
     *       "module_version"
 
