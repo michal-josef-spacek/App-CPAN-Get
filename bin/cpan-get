@@ -91,13 +91,13 @@ There are some posibilities how to define:
 
 easily interact with CPAN from the command line
 
-C<cpan -g Some::Module>
+C<cpan -g App::Pod::Example>
 
 =item L<cpanp>
 
 The CPANPLUS launcher
 
-C<cpanp d --fetchdir=. Some::Module>
+C<cpanp d --fetchdir=. App::Pod::Example>
 
 =item L<cpanget>
 

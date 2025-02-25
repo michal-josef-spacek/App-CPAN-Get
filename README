@@ -53,12 +53,12 @@ SEE ALSO
     cpan
         easily interact with CPAN from the command line
 
-        "cpan -g Some::Module"
+        "cpan -g App::Pod::Example"
 
     cpanp
         The CPANPLUS launcher
 
-        "cpanp d --fetchdir=. Some::Module"
+        "cpanp d --fetchdir=. App::Pod::Example"
 
     cpanget
         Shell tool in cpanspec project.
