@@ -5,7 +5,6 @@ TODO
 9. Review 'version' and 'version_range'
 10. Tests for MetaCPAN::search().
 11. Tests for MetaCPAN::save().
-12. Doc for App::CPAN::Get::MetaCPAN.
 13. Error messages in MetaCPAN
     a) Params to search()
     b) Same style as in search() to save().
@@ -37,4 +36,7 @@ OK [20240623] skim
 OK [20250221] skim
 
 15. Add option to output directory.
+OK [20250225] skim
+
+12. Doc for App::CPAN::Get::MetaCPAN.
 OK [20250225] skim
