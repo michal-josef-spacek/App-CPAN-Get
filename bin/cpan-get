@@ -28,7 +28,7 @@ cpan-get - Tool to fetch module from CPAN archive.
 
 =head1 SYNOPSIS
 
- cpan-get [-f] [-h] [--version] module_name[module_version]
+ cpan-get [-f] [-h] [-o out_dir] [--version] module_name[module_version]
 
 =head1 DESCRIPTION
 
@@ -50,6 +50,12 @@ Vision of this module is:
 =item * C<-h>
 
  Print help.
+
+=item * C<-o out_dir>
+
+ Output directory.
+
+ Default value is actual directory.
 
 =item * C<--version>
 

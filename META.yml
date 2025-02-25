@@ -40,6 +40,7 @@ requires:
   English: 0
   Error::Pure: 0
   Exporter: 0
+  File::Spec::Functions: 0
   Getopt::Std: 0
   IO::Barf: 0
   LWP::UserAgent: 0

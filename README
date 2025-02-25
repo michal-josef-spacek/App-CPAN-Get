@@ -2,7 +2,7 @@ NAME
     cpan-get - Tool to fetch module from CPAN archive.
 
 SYNOPSIS
-     cpan-get [-f] [-h] [--version] module_name[module_version]
+     cpan-get [-f] [-h] [-o out_dir] [--version] module_name[module_version]
 
 DESCRIPTION
     Vision of this module is:
@@ -20,6 +20,12 @@ ARGUMENTS
     *       "-h"
 
              Print help.
+
+    *       "-o out_dir"
+
+             Output directory.
+
+             Default value is actual directory.
 
     *       "--version"
 

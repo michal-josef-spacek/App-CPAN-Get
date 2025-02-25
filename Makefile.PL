@@ -24,6 +24,7 @@ requires 'Cpanel::JSON::XS' => 0;
 requires 'English' => 0;
 requires 'Error::Pure' => 0;
 requires 'Exporter' => 0;
+requires 'File::Spec::Functions' => 0;
 requires 'Getopt::Std' => 0;
 requires 'IO::Barf' => 0;
 requires 'LWP::UserAgent' => 0;
