@@ -1,4 +1,5 @@
 0.15
+ - Add new error for situation when IO::Socket::SSL isn't working. The LWP::UserAgent goes to use of Net::SSL, which is not working with CPAN.
 
 0.14 2025-02-25T11:23:05+01:00
  - Add -o option to define output directory.

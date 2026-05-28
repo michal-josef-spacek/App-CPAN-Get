@@ -125,6 +125,11 @@ sub _fetch {
 		if ($res->is_client_error) {
 			err "Cannot fetch '$uri' URI.", %{$err_hr};
 		} elsif ($res->is_server_error) {
+			if ($res->message =~ m/Crypt-SSLeay can't verify hostnames/ms) {
+				err "Cannot connect to CPAN server. ".
+					"IO::Socket::SSL is not available for hostname verification.",
+					%{$err_hr};
+			}
 			err "Cannot connect to CPAN server.", %{$err_hr};
 		} else {
 			err "Cannot fetch '$uri'.", %{$err_hr};
@@ -231,6 +236,9 @@ Returns undef.
 
  save():
          Cannot connect to CPAN server.
+                 HTTP code: %s
+                 HTTP message: %s
+         Cannot connect to CPAN server. IO::Socket::SSL is not available for hostname verification.
                  HTTP code: %s
                  HTTP message: %s
          Cannot fetch '%s' URI.
